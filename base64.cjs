@@ -1,7 +1,7 @@
 
 const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 export const Base64 = {
-    btoa: (input: string = '') => {
+    btoa: (input) => {
         let str = input;
         let output = '';
 
@@ -21,7 +21,7 @@ export const Base64 = {
         return output;
     },
 
-    atob: (input: string = '') => {
+    atob: (input= '') => {
         let str = input.replace(/=+$/, '');
         let output = '';
 
